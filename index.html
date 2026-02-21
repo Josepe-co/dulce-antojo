@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dulce Antojo 🍓 Snacks & Postres</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Pacifico&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ═══════════════════ NAVBAR ═══════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#inicio" class="nav-logo">
+        <span class="logo-icon">🍬</span>
+        <span class="logo-text">Dulce <span class="logo-accent">Antojo</span></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#inicio" class="nav-link">Inicio</a></li>
+        <li><a href="#menu" class="nav-link">Menú</a></li>
+        <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+        <li><a href="#contacto" class="nav-link">Contacto</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════ HERO ═══════════════════ -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-tag reveal">✨ Snacks para el alma</p>
+      <h1 class="hero-title reveal">
+        Tu <span class="hero-highlight">antojo dulce</span><br/>siempre listo
+      </h1>
+      <p class="hero-sub reveal">
+        Frapés helados, hotcakes esponjosos, fresas con crema<br class="hide-mobile"/>
+        y mucho más. Hecho con amor, entregado con sabor. 💜
+      </p>
+      <div class="hero-btns reveal">
+        <a href="#menu" class="btn btn-primary">Ver Menú 🍓</a>
+        <a href="#contacto" class="btn btn-outline">Contáctanos</a>
+      </div>
+      <div class="hero-badges reveal">
+        <span class="badge-pill">🏠 Pasa a recoger</span>
+        <span class="badge-pill">💬 Pedidos por WhatsApp</span>
+      </div>
+    </div>
+    <div class="hero-visual reveal">
+      <div class="hero-card-stack">
+        <div class="hero-circle">
+          <span class="hero-emoji-big">🍬</span>
+        </div>
+        <div class="hero-float-row">
+          <div class="float-item float-1">☕ Frapé</div>
+          <div class="float-item float-2">🍓 Fresas</div>
+          <div class="float-item float-3">🥞 Hotcakes</div>
+          <div class="float-item float-4">🧊 Paletas</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ SECTION DIVIDER ═══════════════════ -->
+  <div class="wave-divider">
+    <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#FFF9F4"/>
+    </svg>
+  </div>
+
+  <!-- ═══════════════════ HIGHLIGHTS ═══════════════════ -->
+  <section class="highlights">
+    <div class="container">
+      <div class="highlights-grid">
+        <div class="highlight-card reveal">
+          <div class="highlight-icon">🍦</div>
+          <h3>Siempre frescos</h3>
+          <p>Preparamos todo al momento para garantizar la mejor calidad.</p>
+        </div>
+        <div class="highlight-card reveal">
+          <div class="highlight-icon">💜</div>
+          <h3>Hecho con amor</h3>
+          <p>Cada pedido es especial; ponemos cariño en cada detalle.</p>
+        </div>
+        <div class="highlight-card reveal">
+          <div class="highlight-icon">🚀</div>
+          <h3>Entrega rápida</h3>
+          <p>Tu antojo llega a tu puerta antes de que lo pienses.</p>
+        </div>
+        <div class="highlight-card reveal">
+          <div class="highlight-icon">📱</div>
+          <h3>Pedido fácil</h3>
+          <p>Elige lo que quieras y envíanos tu pedido por WhatsApp.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ MENÚ ═══════════════════ -->
+  <section class="menu-section" id="menu">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">🍽️ Nuestro Menú</p>
+        <h2 class="section-title">¿Qué se te antoja?</h2>
+        <p class="section-sub">Snacks dulces y frescos preparados al momento. ¡Hay algo para cada antojo!</p>
+      </div>
+      <div class="products-grid" id="productsGrid">
+        <!-- Las tarjetas se generan por JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ NOSOTROS ═══════════════════ -->
+  <section class="about-section" id="nosotros">
+    <div class="container about-grid">
+      <div class="about-visual reveal">
+        <div class="about-blob">
+          <div class="about-icons-float">
+            <span class="a-icon a1">🍓</span>
+            <span class="a-icon a2">☕</span>
+            <span class="a-icon a3">🥞</span>
+            <span class="a-icon a4">🧊</span>
+            <span class="a-icon a5">🍮</span>
+          </div>
+          <div class="about-circle-main">💜</div>
+        </div>
+      </div>
+      <div class="about-text reveal">
+        <p class="section-tag">💜 Nuestra historia</p>
+        <h2 class="section-title">Nació de un antojo real</h2>
+        <p>
+          <strong>Dulce Antojo</strong> comenzó como ese deseo de tener siempre
+          a la mano algo delicioso, fresco y hecho con cariño. Lo que empezó en
+          casa se convirtió en el lugar favorito para satisfacer cualquier antojo dulce.
+        </p>
+        <p>
+          Usamos ingredientes frescos, preparamos todo al momento y ponemos amor
+          en cada porción. Porque cada pequeño antojo merece ser vivido al máximo.
+        </p>
+        <a href="#menu" class="btn btn-primary">Ver Menú 🍬</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ CONTACTO ═══════════════════ -->
+  <section class="contact-section" id="contacto">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">📬 Contáctanos</p>
+        <h2 class="section-title">¡Haz tu pedido!</h2>
+        <p class="section-sub">Escríbenos por WhatsApp y con gusto preparamos tu pedido.</p>
+      </div>
+      <div class="contact-cards reveal">
+        <div class="contact-card">
+          <div class="contact-icon">📱</div>
+          <h3>WhatsApp</h3>
+          <p>961 655 6465</p>
+          <a href="https://wa.me/529616556465" target="_blank" class="btn btn-primary btn-sm">Escribir ahora</a>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">⏰</div>
+          <h3>Horario</h3>
+          <p>Lunes – Sábado<br/><strong>10:00 am – 8:00 pm</strong></p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">📍</div>
+          <h3>Cobertura</h3>
+          <p>Envíos dentro de la ciudad.<br/>¡O pasa a recoger!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ FOOTER ═══════════════════ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🍬</span>
+        <span class="logo-text">Dulce <span class="logo-accent">Antojo</span></span>
+      </div>
+      <p class="footer-tagline">Hecho con 💜 y mucho azúcar</p>
+      <p class="footer-copy">© 2026 Dulce Antojo — Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════ MASCOTA "DULCY" ═══════════════════ -->
+  <div class="dulcy-wrap" id="dulcyWrap">
+    <div class="dulcy-bubble" id="dulcyBubble">¿Qué se te antoja hoy? 😋</div>
+    <div class="dulcy-character" id="dulcyChar" title="¡Hola! Soy Dulcy 💜" tabindex="0">
+      <img
+        id="dulcyImg"
+        src="dulce antojo mascota.png"
+        alt="Dulcy, la mascota de Dulce Antojo"
+        class="dulcy-mascot-img"
+        draggable="false"
+      />
+    </div>
+  </div>
+
+  <!-- ═══════════════════ FAB CARRITO ═══════════════════ -->
+  <button class="fab-cart" id="fabCart" aria-label="Ver carrito" style="display:none">
+    <span class="fab-icon">🛒</span>
+    <span class="fab-badge" id="fabBadge">0</span>
+  </button>
+
+  <!-- ═══════════════════ MODAL DE PRODUCTO ═══════════════════ -->
+  <div class="modal-overlay" id="orderOverlay">
+    <div class="modal-box" id="orderModal" role="dialog" aria-modal="true" aria-labelledby="modalProductName">
+      <button class="modal-close" id="closeOrderModal" aria-label="Cerrar">✕</button>
+      <!-- Dulcy en el modal -->
+      <div class="modal-dulcy">
+        <img
+          id="dulcyModalImg"
+          src="dulce antojo mascota.png"
+          alt="Dulcy"
+          class="dulcy-mascot-img dulcy-mascot-sm"
+          draggable="false"
+        />
+        <p class="dulcy-modal-msg" id="dulcyModalMsg">¡Elige lo que más se te antoje! 💜</p>
+      </div>
+      <h2 class="modal-product-name" id="modalProductName">Producto</h2>
+      <p class="modal-label">Elige tu opción:</p>
+      <div class="variants-wrap" id="variantsWrap">
+        <!-- chips generados por JS -->
+      </div>
+      <div class="modal-qty-row">
+        <p class="modal-label">Cantidad:</p>
+        <div class="qty-controls">
+          <button class="qty-btn" id="qtyMinus" aria-label="Restar">−</button>
+          <span class="qty-display" id="qtyDisplay">1</span>
+          <button class="qty-btn" id="qtyPlus" aria-label="Sumar">+</button>
+        </div>
+      </div>
+      <div class="modal-subtotal-row">
+        <span class="subtotal-label">Subtotal:</span>
+        <span class="subtotal-value" id="modalSubtotal">$0</span>
+      </div>
+      <button class="btn btn-primary btn-full" id="addToCartBtn">Agregar al carrito 🛒</button>
+    </div>
+  </div>
+
+  <!-- ═══════════════════ MODAL DEL CARRITO ═══════════════════ -->
+  <div class="modal-overlay" id="cartOverlay">
+    <div class="modal-box modal-cart-box" id="cartModal" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+      <button class="modal-close" id="closeCartModal" aria-label="Cerrar">✕</button>
+      <div class="cart-header">
+        <div class="modal-dulcy">
+          <img
+            id="dulcyCartImg"
+            src="dulce antojo mascota.png"
+            alt="Dulcy"
+            class="dulcy-mascot-img dulcy-mascot-sm"
+            draggable="false"
+          />
+          <p class="dulcy-modal-msg" id="dulcyCartMsg">¡Aquí está tu pedido! 🛒</p>
+        </div>
+        <h2 class="modal-product-name" id="cartTitle">Tu Carrito</h2>
+      </div>
+      <!-- Lista de items -->
+      <div class="cart-items-wrap" id="cartItemsWrap">
+        <!-- generado por JS -->
+      </div>
+      <!-- Tipo de entrega -->
+      <div class="delivery-section" id="deliverySection">
+        <p class="modal-label">Tipo de entrega:</p>
+        <div class="delivery-info-pill">
+          🏠 Recoger en tienda
+        </div>
+        <!-- Hidden input para que el JS siga funcionando sin cambios -->
+        <input type="hidden" name="delivery" id="optLocal" value="local" />
+        <input type="hidden" name="delivery" id="optDomicilio" value="local" />
+      </div>
+      <!-- Notas -->
+      <div class="notes-section">
+        <p class="modal-label">Notas del pedido <span class="optional">(opcional)</span>:</p>
+        <textarea
+          class="notes-input"
+          id="notesInput"
+          placeholder="Ej: sin azúcar, extra crema, sin hielo…"
+          rows="2"
+        ></textarea>
+      </div>
+      <!-- Total -->
+      <div class="cart-total-row">
+        <span class="total-label">Total:</span>
+        <span class="total-value" id="cartTotal">$0</span>
+      </div>
+      <!-- Botón enviar -->
+      <button class="btn btn-whatsapp btn-full" id="sendOrderBtn">
+        Enviar pedido por WhatsApp 💬
+      </button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
